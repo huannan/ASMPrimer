@@ -1,0 +1,7 @@
+/**
+ * 依赖库版本管理
+ */
+def versions = [:]
+versions.junit = "4.13.2"
+versions.asm = "9.2"
+ext.versions = versions

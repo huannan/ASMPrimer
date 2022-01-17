@@ -1,0 +1,36 @@
+apply from: 'config.gradle'
+apply plugin: 'java'
+
+group 'com.nan.asmprimer'
+version '1.0'
+
+repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://maven.aliyun.com/repository/google/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/jcenter/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    maven {
+        url 'https://jitpack.io'
+    }
+    maven {
+        url 'https://s01.oss.sonatype.org/content/groups/public'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("junit:junit:${versions.junit}")
+    implementation("org.ow2.asm:asm:$versions.asm")
+    implementation("org.ow2.asm:asm-commons:$versions.asm")
+    implementation("org.ow2.asm:asm-util:$versions.asm")
+    implementation("org.ow2.asm:asm-tree:$versions.asm")
+    implementation("org.ow2.asm:asm-analysis:$versions.asm")
+}
