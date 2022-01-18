@@ -1,6 +1,6 @@
 package com.nan.asmprimer.day01_environment;
 
-public class Client {
+public class Demo {
 
     public static void main(String[] args) throws Exception {
         HelloWorldClassLoader classLoader = new HelloWorldClassLoader();
