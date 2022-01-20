@@ -3,5 +3,5 @@
  */
 def versions = [:]
 versions.junit = "4.13.2"
-versions.asm = "9.2"
+versions.asm = "9.0"
 ext.versions = versions
